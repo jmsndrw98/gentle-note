@@ -205,7 +205,7 @@ body::after {
   position: relative;
   width: 100%;
   aspect-ratio: 9 / 16;
-  max-height: 80vh;          /* 👈 vertical cap */
+  max-height: 40vh;          /* 👈 vertical cap */
   background: #000;
   border-radius: 18px;
   overflow: hidden;
@@ -246,6 +246,7 @@ body::after {
   .emoji { font-size: 40px; }
   .yt-title { font-size: 18px; }
 }
+
 
 
 
