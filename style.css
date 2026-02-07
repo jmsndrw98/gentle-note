@@ -193,21 +193,23 @@ body::after {
 }
 
 .yt-container {
-  max-width: 900px;
   width: 100%;
-  max-width: 420px;
+  max-width: 360px;          /* 👈 narrower than full phone */
+  max-height: 80vh;          /* 👈 never too tall */
+  margin: 0 auto;
   text-align: center;
 }
-/* 9:16 vertical video */
+
+/* 9:16 video */
 .yt-video {
   position: relative;
   width: 100%;
-  aspect-ratio: 9 / 16;  /* 👈 TikTok / Reels */
+  aspect-ratio: 9 / 16;
+  max-height: 80vh;          /* 👈 vertical cap */
   background: #000;
-  border-radius: 20px;
+  border-radius: 18px;
   overflow: hidden;
-}}
-
+}
 .yt-video {
   position: relative;
   width: 100%;
@@ -244,4 +246,5 @@ body::after {
   .emoji { font-size: 40px; }
   .yt-title { font-size: 18px; }
 }
+
 
