@@ -195,8 +195,18 @@ body::after {
 .yt-container {
   max-width: 900px;
   width: 100%;
+  max-width: 420px;
   text-align: center;
 }
+/* 9:16 vertical video */
+.yt-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;  /* 👈 TikTok / Reels */
+  background: #000;
+  border-radius: 20px;
+  overflow: hidden;
+}}
 
 .yt-video {
   position: relative;
@@ -234,3 +244,4 @@ body::after {
   .emoji { font-size: 40px; }
   .yt-title { font-size: 18px; }
 }
+
