@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For You, Gently</title>
+
+  <link rel="icon" type="image/svg+xml" href="cherry.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BACKGROUND AUDIO -->
+  <audio id="bgAudio" loop>
+    <source src="sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- THEME TOGGLE -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    🌙
+  </button>
+
+  <!-- ✨ LOADER -->
+  <div class="loader" id="loader">
+    <div class="sparkle">✨</div>
+    <p class="loading-text">Just a moment…</p>
+  </div>
+
+  <!-- TEXT SEQUENCE -->
+  <main class="sequence hidden" id="text-sequence">
+
+    <div class="card active" id="c1">
+      <div class="emoji">👋🏻</div>
+      <p class="big">Hi May Ann</p>
+      <button class="btn" onclick="goNext(2)">Next</button>
+    </div>
+
+    <div class="card" id="c2">
+      <div class="emoji">🌷</div>
+      <p class="big">I made this just to send something gentle your way,
+a small reminder that there are people who support your success.</p>
+      <button class="btn" onclick="goNext(3)">Next</button>
+    </div>
+
+    <div class="card" id="c3">
+      <div class="emoji">🙏</div>
+      <p class="big">
+        Just a gentle reminder that there are people quietly rooting for your success and your well-being
+hoping you stay strong through whatever you’re facing,that your efforts are rewarded,and that you’re guided and protected along the way.
+      </p>
+      <button class="btn" onclick="showVideo()">Continue</button>
+    </div>
+
+  </main>
+
+  <!-- VIDEO -->
+  <section class="video-section" id="video-section">
+    <div class="yt-container">
+
+      <div class="yt-video">
+        <video id="messageVideo" playsinline>
+          <source src="video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="yt-info">
+        <div class="emoji">🌟</div>
+        <h1 class="yt-title">I hope every day brings you something good.</h1>
+        <p class="yt-meta">
+          May you be blessed, and may the Lord protect you always.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
